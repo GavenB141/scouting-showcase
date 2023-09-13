@@ -10,6 +10,7 @@
     import x from "$lib/assets/icons/x.svg";
     import tba from "$lib/tba";
     import TeamSelector from "$lib/components/TeamSelector.svelte";
+    import { PUBLIC_RETURN_URL } from "$env/static/public";
 
     const imgs=[
         ["cube",cube,""],
@@ -75,4 +76,7 @@
     {/if}
 </div>
 <br>
-<a href="./about"><button>Return</button></a>
+
+{#if PUBLIC_RETURN_URL != ":none"}
+    <a href={PUBLIC_RETURN_URL}><button>Return</button></a>
+{/if}
