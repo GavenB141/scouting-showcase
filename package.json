@@ -24,7 +24,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@zerodevx/svelte-json-view": "^1.0.7",
 		"axios": "^1.4.0"
 	}
 }
